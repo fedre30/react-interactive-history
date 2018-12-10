@@ -1,10 +1,15 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import InstrumentContainer from '../../views/instrument/InstrumentContainer';
+import styled from 'styled-components';
+
+
+
+const HomeCSS = styled.div`
+background:red;
+`
 
 const Home = () => (
-  <div className="Home">
+  <HomeCSS>
     <h1>Homepage</h1>
 
     <li><Link to='/instrument' >
@@ -17,8 +22,9 @@ const Home = () => (
       studio
     </Link></li>
 
-  </div>
+  </HomeCSS>
 );
+
 
 
 export default Home;
