@@ -1,32 +1,43 @@
 import React from "react";
-import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
-import PropTypes from 'prop-types';
 import data from '../../helpers/data';
 
 class Story extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      story: 0,
+      story: 'story1',
+      id: 1,
     }
   }
 
-  nextStory = () => {
+  nextScene = (nextScene) => {
     this.setState({
-      story: 1,
-    })
+      story: nextScene,
+    });
+    console.log(nextScene);
   };
 
   render() {
-    const { story } = this.state;
+    const scene = this.state.story;
     return (
-      <div >
-        <p scene = {this.state.story}>{data.scene.text}</p>
-        <button onClick={this.nextStory}>next</button>
+      <div>
+        <p>{data[scene].text}</p>
+        {data[scene].choices ? (
+          <div>
+            {console.log('div')}
+            {data[scene].choices.map(choice =>
+              <button onClick={() => {this.nextScene(choice.nextScene)}} key={choice.text}>{choice.text}</button>
+            )}
+          </div>
+        ) : (
+          <button onClick={ () => {this.nextScene(data[scene].nextScene)}}>next</button>
+        )}
+
       </div>
     )
 
   };
+
 
 }
 
