@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import InstrumentContainer from '../../views/instrument/InstrumentContainer';
 
 const Home = () => (
-  <div>
+  <div className="Home">
     <h1>Homepage</h1>
 
     <li><Link to='/instrument' >

@@ -1,7 +1,8 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import Home from "./Home";
-import API from '../../helpers/api'
+import "./home.scss";
+
 
 class HomeContainer extends React.Component {
   state = {
