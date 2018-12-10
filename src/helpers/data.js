@@ -1,7 +1,12 @@
+//IMAGES
+import F from '../img/F.png';
+
+
 const data = {
   story1: {
     text: 'lorem ipsum',
     nextScene: 'story2',
+    img: F
   },
   story2: {
     text: 'bbbbbbb',
