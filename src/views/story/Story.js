@@ -15,7 +15,7 @@ overflow: hidden;
 .image {
   width: 100%;
   height: 20vh;
-  margin-bottom: 45vh;
+  margin-bottom: 35vh;
   
   img {
   width: 100%;
@@ -26,6 +26,7 @@ overflow: hidden;
   text-align: center;
   color: white;
   margin-bottom: 3rem;
+  line-height: 2rem;
 }
 
 .buttons-container {
@@ -78,7 +79,9 @@ class Story extends React.Component {
               <div className="buttons-container">
                 <div className="button" onClick={() => {
                   this.nextScene(choice.nextScene)
-                }} key={choice.text}>{choice.text}</div>
+                }} key={choice.text}>
+                  <a target="_blank" href={choice.link}>{choice.text}</a>
+                </div>
               </div>
             )}
           </div>
