@@ -1,26 +1,20 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import Colors from "../../styles/const";
 
 
 
 const HomeCSS = styled.div`
-background:red;
+background-color: ${Colors.background};
+
 `
 
 const Home = () => (
   <HomeCSS>
-    <h1>Homepage</h1>
+    <h1>You've got a friend in me</h1>
 
-    <li><Link to='/instrument' >
-      instrument
-    </Link></li>
-    <li><Link to='/map' >
-      map
-    </Link></li>
-    <li><Link to='/studio' >
-      studio
-    </Link></li>
+
 
   </HomeCSS>
 );
