@@ -1,9 +1,9 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import Studio from "./Studio";
+import Story from "./Story";
 import API from '../../helpers/api'
 
-class StudioContainer extends React.Component {
+class StoryContainer extends React.Component {
   state = {
 
   }
@@ -13,7 +13,8 @@ class StudioContainer extends React.Component {
 
   }
   render() {
-    return <Studio />;
+
+    return <Story />;
   }
 }
-export default withRouter(StudioContainer);
+export default withRouter(StoryContainer);
