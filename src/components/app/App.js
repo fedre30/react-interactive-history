@@ -2,9 +2,8 @@ import React, {Component} from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import "./App.css";
 import HomeContainer from "../../views/home/HomeContainer";
-import InstrumentContainer from "../../views/instrument/InstrumentContainer";
-import MapContainer from '../../views/map/MapContainer';
-import StudioContainer from '../../views/studio/StudioContainer';
+import StoryContainer from "../../views/story/StoryContainer";
+
 
 class App extends Component {
   render() {
@@ -13,9 +12,7 @@ class App extends Component {
         <Router>
           <Switch>
             <Route exact path="/" component={HomeContainer}/>
-            <Route path="/instrument" component={InstrumentContainer}/>
-            <Route exact path="/map" component={MapContainer}/>
-            <Route exact path="/studio" component={StudioContainer}/>
+            <Route path="/story" component={StoryContainer}/>
           </Switch>
         </Router>
       </div>
