@@ -1,4 +1,4 @@
-# React interactive history
+# React interactive story
 
 Progressive webapp in React
 
