@@ -1,5 +1,5 @@
 # React interactive history
 
-Progresisve webapp in React
+Progressive webapp in React
 
 
