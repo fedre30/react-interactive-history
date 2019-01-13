@@ -27,6 +27,7 @@ overflow: hidden;
   color: white;
   margin-bottom: 3rem;
   line-height: 2rem;
+  padding: 0 1rem;
 }
 
 .buttons-container {
@@ -44,6 +45,11 @@ overflow: hidden;
   border-radius: 0.7rem;
   font-weight: 600;
  
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 
